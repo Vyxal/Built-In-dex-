@@ -3,15 +3,10 @@ import { Button } from "@/components/ui/button"
 
 export default function HomePage() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-900 to-blue-900 text-white relative overflow-hidden">
-            {/* Background circular patterns */}
-            <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute right-0 top-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-                <div className="absolute right-72 top-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-            </div>
+        <div className="min-h-screen w-full bg-gradient-to-br from-purple-900 to-blue-900 text-white relative overflow-hidden">
 
             {/* Navigation */}
-            <nav className="bg-blue-700 p-4">
+            <nav className="bg-blue-700 p-4 w-full">
                 <div className="container mx-auto flex justify-between items-center">
                     <div className="flex space-x-4">
                         <a href="#" className="hover:text-blue-200 transition">All Built-Ins</a>
@@ -24,9 +19,9 @@ export default function HomePage() {
             </nav>
 
             {/* Main Content */}
-            <main className="container mx-auto mt-20 text-center px-4">
-                <h1 className="text-6xl font-bold mb-6">Built-In[dex]</h1>
-                <p className="text-xl mb-8 max-w-3xl mx-auto">
+            <main className="container mx-auto mt-20 text-center px-4 relative z-10">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Built-In[dex]</h1>
+                <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
                     Making a golfing or esoteric programming language and need inspirations for what operators and built-in functions to include? Built-in[dex] provides an index of common, cool, and helpful operations present within a variety of languages.
                 </p>
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-xl transition duration-300 ease-in-out transform hover:scale-105">
@@ -51,12 +46,6 @@ export default function HomePage() {
                 ))}
             </div>
 
-            <style jsx>{`
-        @keyframes twinkle {
-          0%, 100% { opacity: 0.7; }
-          50% { opacity: 0.3; }
-        }
-      `}</style>
         </div>
     )
 }
