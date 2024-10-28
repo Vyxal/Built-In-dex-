@@ -1,6 +1,5 @@
 import { Input } from "@/components/ui/input"
-import Link from "next/link"
-
+import { Link } from "react-router-dom"
 export default function BuiltInDetailPage({ name, description, examples, related, languages }) {
 
     const renderRelated = () => {
